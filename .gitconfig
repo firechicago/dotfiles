@@ -1,0 +1,7 @@
+[core]
+	editor = vim
+[user]
+	name = Chris Wand
+	email = chris@vermonster.com
+[push]
+	default = simple
