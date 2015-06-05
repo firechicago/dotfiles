@@ -94,8 +94,11 @@ let mapleader = ','
 map <C-n> :NERDTreeToggle<CR>
 set number
 set laststatus=2
+set history=1000
 set noswapfile
 set tabstop=2 shiftwidth=2 expandtab
+set backspace=indent,eol,start
+
 nnoremap <Leader>rtw :%s/\s\+$//e<CR>
 
-autocmd VimEnter * NERDTree | wincmd p
+autocmd BufWritePre * :%s/\s\+$//e
