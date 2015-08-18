@@ -98,7 +98,13 @@ set history=1000
 set noswapfile
 set tabstop=2 shiftwidth=2 expandtab
 set backspace=indent,eol,start
+command W w
+command Q q
+command WQ wq
+command Wq wq
+command E e
 
 nnoremap <Leader>rtw :%s/\s\+$//e<CR>
 
 autocmd BufWritePre * :%s/\s\+$//e
+autocmd BufRead,BufNewFile *.es6 setfiletype javascript
