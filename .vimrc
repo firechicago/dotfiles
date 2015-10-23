@@ -104,8 +104,12 @@ command Q q
 command WQ wq
 command Wq wq
 command E e
+command X x
 
 nnoremap <Leader>rtw :%s/\s\+$//e<CR>
+
+" Make vim use system clipboard for cut and paste
+set clipboard=unnamed
 
 autocmd BufWritePre * :%s/\s\+$//e
 autocmd BufRead,BufNewFile *.es6 setfiletype javascript
