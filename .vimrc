@@ -64,6 +64,7 @@ Plugin 'kien/ctrlp.vim'
 "
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
+Plugin 'jeetsukumaran/vim-buffergator'
 
 "
 " Languages
@@ -104,7 +105,6 @@ command Q q
 command WQ wq
 command Wq wq
 command E e
-command X x
 
 nnoremap <Leader>rtw :%s/\s\+$//e<CR>
 
