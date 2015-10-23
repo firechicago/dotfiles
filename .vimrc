@@ -76,6 +76,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-haml'
 Plugin 'chrisbra/csv.vim'
 Plugin 'elzr/vim-json'
+Plugin 'heartsentwined/vim-emblem'
 
 "
 " Development Tool Integration
