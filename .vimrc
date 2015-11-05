@@ -105,6 +105,7 @@ command Q q
 command WQ wq
 command Wq wq
 command E e
+imap jj <Esc>
 
 nnoremap <Leader>rtw :%s/\s\+$//e<CR>
 
