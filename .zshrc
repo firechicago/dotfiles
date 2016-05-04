@@ -81,6 +81,7 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias be="bundle exec"
+alias fbe="foreman run bundle exec"
 alias ll="ls -la"
 alias giti="git log --graph --oneline --all --decorate"
 alias gru="git remote update"
@@ -88,3 +89,13 @@ alias cd..="cd .."
 alias ..="cd .."
 alias co="git checkout"
 alias st="git status"
+
+function groc { # git rebase origin/{current}
+  local remote_branch="${1:-origin}/$(git branch | grep \* | cut -c 3-)"
+  git rebase $remote_branch
+}
+
+function gpoc { # git push origin {current}
+  local current_branch="$(git rev-parse --abbrev-ref HEAD)"
+  git push origin $current_branch
+}
