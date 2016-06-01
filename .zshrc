@@ -99,3 +99,6 @@ function gpoc { # git push origin {current}
   local current_branch="$(git rev-parse --abbrev-ref HEAD)"
   git push origin $current_branch
 }
+
+export NVM_DIR="/Users/christopherwand/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
