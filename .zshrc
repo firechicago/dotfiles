@@ -95,6 +95,11 @@ function groc { # git rebase origin/{current}
   git rebase $remote_branch
 }
 
+function gpsu { # git push origin {current}
+  local current_branch="$(git rev-parse --abbrev-ref HEAD)"
+  git push --set-upstream origin $current_branch
+}
+
 function gpoc { # git push origin {current}
   local current_branch="$(git rev-parse --abbrev-ref HEAD)"
   git push origin $current_branch
