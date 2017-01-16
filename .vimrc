@@ -71,6 +71,7 @@ Plugin 'jeetsukumaran/vim-buffergator'
 "
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'nono/vim-handlebars'
 Plugin 'kchmck/vim-coffee-script'
@@ -106,6 +107,7 @@ command WQ wq
 command Wq wq
 command E e
 imap jj <Esc>
+nmap ; :
 
 nnoremap <Leader>rtw :%s/\s\+$//e<CR>
 
